@@ -1,4 +1,5 @@
 import 'package:educational_system/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:educational_system/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +11,6 @@ class EducationalSystem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: OnboardingView());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: SplashView());
   }
 }

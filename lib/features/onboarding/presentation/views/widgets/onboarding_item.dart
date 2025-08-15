@@ -9,11 +9,17 @@ class OnboardingItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisSize: MainAxisSize.min,
       children: [
         Image.asset(onboardingModel.image),
         SizedBox(height: 36),
-        Text(onboardingModel.title, style: AppStyles.styleSemiBold35),
+        Text(
+          onboardingModel.title,
+          style: AppStyles.styleSemiBold35,
+          textAlign: TextAlign.center,
+          overflow: TextOverflow.ellipsis,
+        ),
       ],
     );
   }
