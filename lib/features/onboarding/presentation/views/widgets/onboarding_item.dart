@@ -18,7 +18,6 @@ class OnboardingItem extends StatelessWidget {
           onboardingModel.title,
           style: AppStyles.styleSemiBold35,
           textAlign: TextAlign.center,
-          overflow: TextOverflow.ellipsis,
         ),
       ],
     );
