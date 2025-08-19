@@ -1,11 +1,6 @@
-import 'package:educational_system/core/utils/app_images.dart';
-import 'package:educational_system/features/onboarding/data/models/onboarding_model.dart';
-import 'package:educational_system/features/onboarding/presentation/views/onboarding_view.dart';
-import 'package:educational_system/features/onboarding/presentation/views/widgets/circle_progress_painter.dart';
+import 'package:educational_system/features/auth/presentation/views/onboarding_signinup_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/custom_button.dart';
-import 'package:educational_system/features/onboarding/presentation/views/widgets/home_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/on_skip_button.dart';
-import 'package:educational_system/features/onboarding/presentation/views/widgets/onboarding_item.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/onboarding_page_view.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +27,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
               onSkip: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomeView()),
+                  MaterialPageRoute(builder: (context) => OnboardingSigninupView()),
                 );
               },
             ),

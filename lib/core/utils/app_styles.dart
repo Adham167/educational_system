@@ -13,4 +13,10 @@ abstract class AppStyles {
     fontFamily: "Plus Jakarta Sans",
     fontWeight: FontWeight.w400,
   );
+  static const styleSemiBold34 = TextStyle(
+    color: Color(0xFF022D4F),
+    fontSize: 34,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w400,
+  );
 }

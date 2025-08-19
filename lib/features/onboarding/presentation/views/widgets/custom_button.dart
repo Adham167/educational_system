@@ -1,6 +1,6 @@
 
+import 'package:educational_system/features/auth/presentation/views/onboarding_signinup_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/circle_progress_painter.dart';
-import 'package:educational_system/features/onboarding/presentation/views/widgets/home_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/onboarding_page_view.dart';
 import 'package:flutter/material.dart';
 
@@ -49,7 +49,7 @@ class CustomButton extends StatelessWidget {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeView(),
+                      builder: (context) => OnboardingSigninupView(),
                     ),
                   );
                 }
