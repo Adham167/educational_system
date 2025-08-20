@@ -1,8 +1,9 @@
-import 'package:educational_system/features/onboarding/presentation/views/onboarding_view.dart';
+import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/features/splash/presentation/manager/splash_cubit/splash_cubit.dart';
 import 'package:educational_system/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 void main() {
   runApp(EducationalSystem());
@@ -15,7 +16,10 @@ class EducationalSystem extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => SplashCubit()..getStarted(),
-      child: MaterialApp(debugShowCheckedModeBanner: false, home: SplashView()),
+      child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
+        routerConfig: AppRouter.router,
+      ),
     );
   }
 }

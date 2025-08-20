@@ -1,8 +1,10 @@
-import 'package:educational_system/features/auth/presentation/views/onboarding_signinup_view.dart';
+import 'package:educational_system/core/utils/app_router.dart';
+import 'package:educational_system/features/auth/presentation/views/get_started_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/custom_button.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/on_skip_button.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/onboarding_page_view.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnboardingBody extends StatefulWidget {
   static var onboardingList;
@@ -25,10 +27,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
           children: [
             SkipButton(
               onSkip: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => OnboardingSigninupView()),
-                );
+                GoRouter.of(context).push(AppRouter.KGetStartedView);
               },
             ),
             Expanded(
