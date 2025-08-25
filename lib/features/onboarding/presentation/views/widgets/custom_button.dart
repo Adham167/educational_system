@@ -1,5 +1,4 @@
 import 'package:educational_system/core/utils/app_router.dart';
-import 'package:educational_system/features/auth/presentation/views/get_started_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/circle_progress_painter.dart';
 import 'package:educational_system/features/onboarding/presentation/views/widgets/onboarding_page_view.dart';
 import 'package:flutter/material.dart';

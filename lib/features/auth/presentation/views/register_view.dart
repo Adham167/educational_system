@@ -1,4 +1,4 @@
-import 'package:educational_system/core/utils/app_styles.dart';
+import 'package:educational_system/features/auth/presentation/views/widgets/register_body.dart';
 import 'package:flutter/material.dart';
 
 class RegisterView extends StatelessWidget {
@@ -7,11 +7,8 @@ class RegisterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          Text("Register Now",style: AppStyles.styleBold33,)
-        ],
-      ),
+      body: RegisterBody(),
     );
   }
 }
+

@@ -1,4 +1,5 @@
 import 'package:educational_system/core/utils/app_styles.dart';
+import 'package:educational_system/features/auth/presentation/views/widgets/signin_body.dart';
 import 'package:flutter/material.dart';
 
 class SigninView extends StatelessWidget {
@@ -7,7 +8,7 @@ class SigninView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Text("Sign IN",style: AppStyles.styleBold33,),
+      body: SigninBody(),
     );
   }
 }

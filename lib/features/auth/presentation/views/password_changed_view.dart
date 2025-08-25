@@ -1,4 +1,4 @@
-import 'package:educational_system/core/utils/app_styles.dart';
+import 'package:educational_system/features/auth/presentation/views/widgets/password_changed.dart';
 import 'package:flutter/material.dart';
 
 class PasswordChangedView extends StatelessWidget {
@@ -7,12 +7,8 @@ class PasswordChangedView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-                    Text("Password Changed",style: AppStyles.styleBold33,)
-
-        ],
-      ),
+      body: PasswordChanged(),
     );
   }
 }
+
