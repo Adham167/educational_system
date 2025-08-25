@@ -1,8 +1,10 @@
 import 'package:educational_system/core/utils/app_colors.dart';
 import 'package:educational_system/core/utils/app_images.dart';
+import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:educational_system/core/utils/widget.dart/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class GetStartedView extends StatelessWidget {
   const GetStartedView({super.key});
@@ -31,14 +33,20 @@ class GetStartedView extends StatelessWidget {
                     text: 'SIGN IN',
                     textStyle: AppStyles.styleRegularWhite16,
                     color: AppColors.primary,
-                    ontap: () {},
+                    ontap: () {
+                      GoRouter.of(context).push(AppRouter.kSigninView);
+                    },
                   ),
                   SizedBox(width: 16),
                   CustomElevatedButton(
                     text: 'REGISTER',
                     textStyle: AppStyles.styleRegular16,
                     color: Colors.white,
-                    ontap: () {},
+                    ontap: () {
+                      GoRouter.of(
+                        context,
+                      ).pushReplacement(AppRouter.kRegisterAsView);
+                    },
                   ),
                 ],
               ),
