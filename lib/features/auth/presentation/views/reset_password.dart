@@ -1,3 +1,4 @@
+import 'package:educational_system/core/utils/widgets/custom_app_bar.dart';
 import 'package:educational_system/features/auth/presentation/widgets/reset_password_body.dart';
 import 'package:flutter/material.dart';
 
@@ -6,8 +7,6 @@ class ResetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ResetPasswordBody(),
-    );
+    return Scaffold(appBar: CustomAppBar(), body: ResetPasswordBody());
   }
 }
