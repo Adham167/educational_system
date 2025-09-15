@@ -19,11 +19,11 @@ class CircleProgressPainter extends CustomPainter {
     final center = Offset(size.width / 2, size.height / 2);
     final radius = size.width / 2;
 
-    // رسم الجزء المكتمل من الدائرة
+
     canvas.drawArc(
       Rect.fromCircle(center: center, radius: radius),
-      -90 * (pi / 180), // البدء من الأعلى
-      2 * pi * progress, // الزاوية بناءً على التقدم
+      -90 * (pi / 180),
+      2 * pi * progress, 
       false,
       paint,
     );

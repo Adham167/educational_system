@@ -1,4 +1,4 @@
-import 'package:educational_system/features/auth/presentation/views/widgets/create_password_body.dart';
+import 'package:educational_system/features/auth/presentation/widgets/create_password_body.dart';
 import 'package:flutter/material.dart';
 
 class CreatePasswordView extends StatelessWidget {

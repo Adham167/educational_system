@@ -1,4 +1,4 @@
-import 'package:educational_system/features/auth/presentation/views/widgets/register_body.dart';
+import 'package:educational_system/features/auth/presentation/widgets/register_body.dart';
 import 'package:flutter/material.dart';
 
 class RegisterView extends StatelessWidget {
@@ -6,9 +6,6 @@ class RegisterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: RegisterBody(),
-    );
+    return Scaffold(body: RegisterBody());
   }
 }
-

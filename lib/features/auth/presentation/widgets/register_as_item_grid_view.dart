@@ -1,7 +1,7 @@
 import 'package:educational_system/core/utils/app_images.dart';
 import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/features/auth/data/models/register_as_model.dart';
-import 'package:educational_system/features/auth/presentation/views/widgets/register_as_item.dart';
+import 'package:educational_system/features/auth/presentation/widgets/register_as_item.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

@@ -2,7 +2,7 @@ import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class SkipButton extends StatelessWidget {
-  const SkipButton({required this.onSkip});
+  const SkipButton({super.key, required this.onSkip});
   final VoidCallback onSkip;
 
   @override

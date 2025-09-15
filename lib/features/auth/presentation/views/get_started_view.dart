@@ -1,4 +1,4 @@
-import 'package:educational_system/features/auth/presentation/views/widgets/get_started_body.dart';
+import 'package:educational_system/features/auth/presentation/widgets/get_started_body.dart';
 import 'package:flutter/material.dart';
 
 class GetStartedView extends StatelessWidget {

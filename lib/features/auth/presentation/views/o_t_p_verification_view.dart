@@ -1,4 +1,4 @@
-import 'package:educational_system/features/auth/presentation/views/widgets/o_t_p_verification_body.dart';
+import 'package:educational_system/features/auth/presentation/widgets/o_t_p_verification_body.dart';
 import 'package:flutter/material.dart';
 
 class OTPVerificationView extends StatelessWidget {

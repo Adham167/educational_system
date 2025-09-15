@@ -1,4 +1,4 @@
-import 'package:educational_system/features/auth/presentation/views/widgets/password_changed.dart';
+import 'package:educational_system/features/auth/presentation/widgets/password_changed.dart';
 import 'package:flutter/material.dart';
 
 class PasswordChangedView extends StatelessWidget {

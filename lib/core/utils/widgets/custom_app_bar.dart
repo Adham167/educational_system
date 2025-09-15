@@ -2,18 +2,18 @@ import 'package:educational_system/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
-  final Widget ? title;
-  final Widget ? action;
-  final Color ? backgroundColor;
+  final Widget? title;
+  final Widget? action;
+  final Color? backgroundColor;
   final bool hideBack;
-  final double ? height;
+  final double? height;
   const CustomAppBar({
     this.title,
     this.hideBack = false,
     this.action,
-    this.backgroundColor ,
+    this.backgroundColor,
     this.height,
-    super.key
+    super.key,
   });
 
   @override
@@ -23,33 +23,34 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       elevation: 0,
       centerTitle: true,
       automaticallyImplyLeading: false,
-      toolbarHeight: height ?? 80 ,
+      toolbarHeight: height ?? 80,
       title: title ?? const Text(''),
       titleSpacing: 0,
-      actions: [
-        action ?? Container()
-      ],
-      leading: hideBack ? null : IconButton(
-        onPressed: (){
-          Navigator.pop(context);
-        },
-        icon: Container(
-          height: 50,
-          width: 50,
-          decoration: const BoxDecoration(
-            color: AppColors.primary,
-            shape: BoxShape.circle
-          ),
-          child: const Icon(
-            Icons.arrow_back_ios_new,
-            size: 15,
-            color:  Colors.white
-          ),
-        ),
-      ),
+      actions: [action ?? Container()],
+      leading:
+          hideBack
+              ? null
+              : IconButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                icon: Container(
+                  height: 40,
+                  width: 40,
+                  decoration: BoxDecoration(
+                    color: AppColors.backbutton,
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  child: const Icon(
+                    Icons.arrow_back_ios_new,
+                    size: 21,
+                    color: AppColors.primary,
+                  ),
+                ),
+              ),
     );
   }
-  
+
   @override
-  Size get preferredSize => Size.fromHeight(height ?? 80);
+  Size get preferredSize => Size.fromHeight(height ?? 160);
 }

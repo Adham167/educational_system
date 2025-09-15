@@ -20,7 +20,7 @@ class CustomButton extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: [
-        Container(
+        SizedBox(
           width: 68,
           height: 68,
           child: CustomPaint(

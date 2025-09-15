@@ -16,7 +16,7 @@ class ActiveRegisterAsItem extends StatelessWidget {
       decoration: BoxDecoration(
         color: Color(0xFFF7F7F7),
         borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: AppColors.borderType, width: 1),
+        border: Border.all(color: AppColors.borderType, width: 2),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
