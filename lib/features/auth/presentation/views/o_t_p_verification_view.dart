@@ -1,3 +1,4 @@
+import 'package:educational_system/core/utils/widgets/custom_app_bar.dart';
 import 'package:educational_system/features/auth/presentation/widgets/o_t_p_verification_body.dart';
 import 'package:flutter/material.dart';
 
@@ -6,9 +7,6 @@ class OTPVerificationView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: OTPVerificationBody(),
-    );
+    return Scaffold(appBar: CustomAppBar(), body: OTPVerificationBody());
   }
 }
-

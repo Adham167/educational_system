@@ -1,3 +1,4 @@
+import 'package:educational_system/features/auth/presentation/widgets/password_changed_body.dart';
 import 'package:flutter/material.dart';
 
 class PasswordChangedView extends StatelessWidget {
@@ -5,6 +6,6 @@ class PasswordChangedView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(body: PasswordChangedBody());
   }
 }
