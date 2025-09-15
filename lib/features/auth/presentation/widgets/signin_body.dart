@@ -38,7 +38,9 @@ class SigninBody extends StatelessWidget {
               child: CustomText(
                 text1: "Forgot Passowrd ? ",
                 ontap2:
-                    () => GoRouter.of(context).push(AppRouter.kResetPassword),
+                    () => GoRouter.of(
+                      context,
+                    ).push(AppRouter.kPasswordChangedView),
               ),
             ),
             SizedBox(height: 32),
