@@ -25,13 +25,17 @@ class _OTPVerificationBodyState extends State<OTPVerificationBody> {
 
   @override
   void dispose() {
-    for (final c in _controllers) c.dispose();
-    for (final f in _focusNodes) f.dispose();
+    for (final c in _controllers) {
+      c.dispose();
+    }
+    for (final f in _focusNodes) {
+      f.dispose();
+    }
     super.dispose();
   }
 
   void _onChanged(String value, int index) {
-// ### حالة اللصق: لو ال value أطول من 1 فالمستخدم عمل paste
+    // ### حالة اللصق: لو ال value أطول من 1 فالمستخدم عمل paste
     if (value.length > 1) {
       final pasted = value;
       for (int i = 0; i < widget.length; i++) {
@@ -99,6 +103,7 @@ class _OTPVerificationBodyState extends State<OTPVerificationBody> {
                   child: TextField(
                     controller: _controllers[index],
                     focusNode: _focusNodes[index],
+
                     autofocus: index == 0,
                     textAlign: TextAlign.center,
                     keyboardType: TextInputType.number,
@@ -108,6 +113,8 @@ class _OTPVerificationBodyState extends State<OTPVerificationBody> {
                     ],
                     maxLength: 1,
                     decoration: InputDecoration(
+                      hintText: '${index + 1}',
+                      hintStyle: AppStyles.styleRegular20,
                       counterText: '',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
@@ -125,12 +132,13 @@ class _OTPVerificationBodyState extends State<OTPVerificationBody> {
               textStyle: AppStyles.styleRegularWhite16,
               ontap: () {
                 final code = _controllers.map((c) => c.text).join();
-                if (code.length == widget.length)
+                if (code.length == widget.length) {
                   _verify(code);
-                else
+                } else {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text('Please complete the code')),
                   );
+                }
               },
               color: AppColors.primary,
               Width: MediaQuery.of(context).size.width,

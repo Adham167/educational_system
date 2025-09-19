@@ -26,7 +26,7 @@ class _OnboardingBodyState extends State<OnboardingBody> {
           children: [
             SkipButton(
               onSkip: () {
-                GoRouter.of(context).push(AppRouter.KGetStartedView);
+                GoRouter.of(context).push(AppRouter.kStudentView);
               },
             ),
             Expanded(

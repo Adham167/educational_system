@@ -37,6 +37,18 @@ abstract class AppStyles {
     fontFamily: "Plus Jakarta Sans",
     fontWeight: FontWeight.w700,
   );
+  static const styleBold36 = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 36,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w700,
+  );
+  static const styleBold15 = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 15,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w700,
+  );
   static const styleSemiBold14 = TextStyle(
     color: Color(0xFF022D4F),
     fontSize: 14,
@@ -61,9 +73,27 @@ abstract class AppStyles {
     fontFamily: "Plus Jakarta Sans",
     fontWeight: FontWeight.w400,
   );
-  static const styleMediam13 = TextStyle(
+  static const styleMedium13 = TextStyle(
     color: Color(0xFF858383),
     fontSize: 13,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w500,
+  );
+  static const styleMedium14 = TextStyle(
+    color: Color(0xFF111827),
+    fontSize: 14,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w500,
+  );
+  static const styleMedium11 = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 11,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w500,
+  );
+  static const styleMedium16 = TextStyle(
+    color: Color(0xFF000000),
+    fontSize: 16,
     fontFamily: "Plus Jakarta Sans",
     fontWeight: FontWeight.w500,
   );
@@ -72,5 +102,42 @@ abstract class AppStyles {
     fontSize: 20,
     fontFamily: "Plus Jakarta Sans",
     fontWeight: FontWeight.w400,
+  );
+  static const styleGreyRegular12 = TextStyle(
+    color: Color(0xFF9CA3AF),
+    fontSize: 12,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w400,
+  );
+  static const styleBold16 = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 16,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w700,
+  );
+  static const styleBold18 = TextStyle(
+    color: Color(0xFF545454),
+    fontSize: 18,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w700,
+  );
+
+  static const styleGreyBold15 = TextStyle(
+    color: Color(0xFF545454),
+    fontSize: 15,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w700,
+  );
+  static const styleMedium18 = TextStyle(
+    color: Color(0xFF000000),
+    fontSize: 18,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w500,
+  );
+  static const styleGreyMedium18 = TextStyle(
+    color: Color(0xFF545454),
+    fontSize: 18,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w500,
   );
 }
