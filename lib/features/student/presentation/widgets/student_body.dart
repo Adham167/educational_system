@@ -8,7 +8,6 @@ class StudentBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -37,7 +36,7 @@ class StudentBody extends StatelessWidget {
             offset: const Offset(0, -120), // يخلي الكارد يطلع فوق شوية
             child: Column(
               children: List.generate(
-                10, // عدد الكروت اللي انت عايزه
+                5, // عدد الكروت اللي انت عايزه
                 (index) => Padding(
                   padding: const EdgeInsets.only(bottom: 16),
                   child: CardWidget(),

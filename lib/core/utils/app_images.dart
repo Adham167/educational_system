@@ -18,6 +18,14 @@ class Assets {
   /// assets/images/doctor.png
   static const String imagesDoctor = "assets/images/doctor.png";
 
+  /// Assets for imagesHeartSearch
+  /// assets/images/heart-search.png
+  static const String imagesHeartSearch = "assets/images/heart-search.png";
+
+  /// Assets for imagesHome1
+  /// assets/images/home-1.png
+  static const String imagesHome1 = "assets/images/home-1.png";
+
   /// Assets for imagesLogo1
   /// assets/images/logo_1.png
   static const String imagesLogo1 = "assets/images/logo_1.png";
@@ -65,5 +73,9 @@ class Assets {
   /// Assets for imagesStudent
   /// assets/images/student.png
   static const String imagesStudent = "assets/images/student.png";
+
+  /// Assets for imagesUser
+  /// assets/images/user.png
+  static const String imagesUser = "assets/images/user.png";
 }
 

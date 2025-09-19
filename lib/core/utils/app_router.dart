@@ -9,6 +9,7 @@ import 'package:educational_system/features/auth/presentation/views/reset_passwo
 import 'package:educational_system/features/auth/presentation/views/signin_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:educational_system/features/splash/presentation/views/splash_view.dart';
+import 'package:educational_system/features/student/presentation/views/explore_view.dart';
 import 'package:educational_system/features/student/presentation/views/student_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -24,11 +25,13 @@ abstract class AppRouter {
   static const kResetPassword = '/ResetPassword';
   static const kSigninView = '/SigninView';
   static const kStudentView = '/StudentView';
+  static const kExploreView = '/ExploreView';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => const SplashView()),
       GoRoute(path: kStudentView, builder: (context, state) => const StudentView()),
       GoRoute(path: kPasswordChangedView, builder: (context, state) => const PasswordChangedView()),
+      GoRoute(path: kExploreView, builder: (context, state) => const ExploreView()),
       GoRoute(
         path: KOnboardingView,
         builder: (context, state) => const OnboardingView(),

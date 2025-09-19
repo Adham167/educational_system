@@ -31,7 +31,7 @@ class CardWidget extends StatelessWidget {
                 vertical: 8,
               ),
               child: ListTile(
-                title: Text("mohamed ahmed", style: AppStyles.styleMedium18),
+                title: Text("Adham Abdelsalam", style: AppStyles.styleMedium18),
                 leading: Image.asset(Assets.imagesPhoto1),
                 trailing: IconButton(
                   onPressed: () {},
@@ -103,12 +103,10 @@ class CardWidget extends StatelessWidget {
                       decoration: InputDecoration(
                         hintText: "Add a comment",
                         hintStyle: AppStyles.styleGreyBold15,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                          borderSide: BorderSide(
-                            color: Color(0xFFFDF6ED),
-                            width: 1,
-                          ),
+
+                        enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(70),
+                          borderSide: BorderSide(color: Color(0xFFFDF6ED)),
                         ),
                         filled: true,
                         fillColor: Colors.white,
