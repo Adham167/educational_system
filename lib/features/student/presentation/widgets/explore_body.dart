@@ -1,7 +1,9 @@
 import 'package:educational_system/core/utils/app_colors.dart';
+import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:educational_system/features/student/presentation/widgets/doctors_list_view.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ExploreBody extends StatelessWidget {
   const ExploreBody({super.key});
@@ -35,19 +37,22 @@ class ExploreBody extends StatelessWidget {
           ),
         ),
         SizedBox(height: 8),
-        Container(
-          height: 46,
-          width: 327,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(8),
-            border: Border.all(width: 2, color: Color(0XFFF3F4F6)),
-            color: Colors.white,
-          ),
-          child: Align(
-            alignment: Alignment.centerLeft,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: Text("Level1", style: AppStyles.styleMedium14),
+        GestureDetector(
+          onTap: () => GoRouter.of(context).push(AppRouter.kLevelView),
+          child: Container(
+            height: 46,
+            width: 327,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(width: 2, color: Color(0XFFF3F4F6)),
+              color: Colors.white,
+            ),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Text("Level1", style: AppStyles.styleMedium14),
+              ),
             ),
           ),
         ),

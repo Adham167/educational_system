@@ -3,19 +3,19 @@ import 'package:educational_system/core/utils/app_images.dart';
 import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/core/utils/widgets/custom_app_bar.dart';
 import 'package:educational_system/features/student/presentation/widgets/custom_bottom_bar.dart';
-import 'package:educational_system/features/student/presentation/widgets/level_body.dart';
+import 'package:educational_system/features/student/presentation/widgets/level_term_body.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class LevelView extends StatelessWidget {
-  const LevelView({super.key});
+class LevelTermView extends StatelessWidget {
+  const LevelTermView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: CustomAppBar(height: 70, backgroundColor: AppColors.primary),
-      body: LevelBody(),
+      body: LevelTermBody(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppColors.floatingbutton,
         onPressed: () {},
