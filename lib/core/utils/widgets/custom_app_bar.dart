@@ -15,7 +15,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.height,
     super.key,
   });
-
+  // title ?? const Text(''),
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -24,30 +24,36 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       automaticallyImplyLeading: false,
       toolbarHeight: height ?? 80,
-      title: title ?? const Text(''),
-      titleSpacing: 0,
-      actions: [action ?? Container()],
-      leading:
+      title: Row(
+        children: [
           hideBack
-              ? null
-              : IconButton(
-                onPressed: () {
-                  Navigator.pop(context);
-                },
-                icon: Container(
-                  height: 40,
-                  width: 40,
-                  decoration: BoxDecoration(
-                    color: AppColors.backbutton,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: const Icon(
-                    Icons.arrow_back_ios_new,
-                    size: 21,
-                    color: AppColors.primary,
+              ? Text("")
+              : Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                      color: AppColors.backbutton,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: const Icon(
+                      Icons.arrow_back_ios_new,
+                      size: 21,
+                      color: AppColors.primary,
+                    ),
                   ),
                 ),
               ),
+          title ?? const Text(''),
+        ],
+      ),
+      titleSpacing: 0,
+      actions: [action ?? Container()],
     );
   }
 

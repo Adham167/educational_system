@@ -1,12 +1,15 @@
 import 'package:educational_system/core/utils/app_images.dart';
-import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
 class CustomBottomBar extends StatelessWidget {
-  const CustomBottomBar({super.key});
-
+  const CustomBottomBar({super.key, required this.icon1, this.ontap1, this.ontap2, required this.name1, required this.name2, required this.icon2});
+  final String icon1;
+  final VoidCallback? ontap1;
+  final VoidCallback? ontap2;
+  final String name1;
+  final String name2;
+  final String icon2;
   @override
   Widget build(BuildContext context) {
     return BottomAppBar(
@@ -19,13 +22,13 @@ class CustomBottomBar extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             GestureDetector(
-              onTap: () => GoRouter.of(context).push(AppRouter.kExploreView),
+              onTap: ontap1,
               child: Column(
                 children: [
-                  Image.asset(Assets.imagesHeartSearch),
+                  Image.asset(icon1),
                   SizedBox(height: 8),
 
-                  Text("Explore", style: AppStyles.styleRegular12),
+                  Text(name1, style: AppStyles.styleRegular12),
                 ],
               ),
             ),
@@ -33,9 +36,9 @@ class CustomBottomBar extends StatelessWidget {
               onTap: () {},
               child: Column(
                 children: [
-                  Image.asset(Assets.imagesUser),
+                  Image.asset(icon2),
                   SizedBox(height: 8),
-                  Text("Profile", style: AppStyles.styleRegular12),
+                  Text(name2, style: AppStyles.styleRegular12),
                 ],
               ),
             ),
