@@ -1,6 +1,8 @@
 import 'package:educational_system/core/utils/app_colors.dart';
+import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LevelTermBody extends StatelessWidget {
   const LevelTermBody({super.key});
@@ -39,18 +41,22 @@ class LevelTermBody extends StatelessWidget {
               4,
               (index) => Card(
                 elevation: 6,
-                child: Container(
-                  height: 72,
-                  width: 333,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 16.0, left: 16),
-                    child: Text(
-                      subjectList[index],
-                      style: AppStyles.styleMedium16,
+                child: GestureDetector(
+                  onTap:
+                      () => GoRouter.of(context).push(AppRouter.kSubjectView),
+                  child: Container(
+                    height: 72,
+                    width: 333,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 16.0, left: 16),
+                      child: Text(
+                        subjectList[index],
+                        style: AppStyles.styleMedium16,
+                      ),
                     ),
                   ),
                 ),

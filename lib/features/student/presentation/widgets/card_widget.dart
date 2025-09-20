@@ -42,7 +42,7 @@ class CardWidget extends StatelessWidget {
 
             Divider(thickness: 1),
 
-            Container(
+            SizedBox(
               height: 120,
               child: Text(
                 "Thank you for all student in my account",

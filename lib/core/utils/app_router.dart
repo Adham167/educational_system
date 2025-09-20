@@ -13,6 +13,7 @@ import 'package:educational_system/features/student/presentation/views/explore_v
 import 'package:educational_system/features/student/presentation/views/level_term_view.dart';
 import 'package:educational_system/features/student/presentation/views/level_view.dart';
 import 'package:educational_system/features/student/presentation/views/student_view.dart';
+import 'package:educational_system/features/student/presentation/views/subject_view.dart';
 import 'package:go_router/go_router.dart';
 
 abstract class AppRouter {
@@ -30,6 +31,7 @@ abstract class AppRouter {
   static const kExploreView = '/ExploreView';
   static const kLevelView = '/LevelView';
   static const kLevelTermView = '/LevelTermView';
+  static const kSubjectView = '/SubjectView';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => const SplashView()),
@@ -38,6 +40,7 @@ abstract class AppRouter {
       GoRoute(path: kExploreView, builder: (context, state) => const ExploreView()),
       GoRoute(path: kLevelView, builder: (context, state) => const LevelView()),
       GoRoute(path: kLevelTermView, builder: (context, state) => const LevelTermView()),
+      GoRoute(path: kSubjectView, builder: (context, state) => const SubjectView()),
       GoRoute(
         path: KOnboardingView,
         builder: (context, state) => const OnboardingView(),

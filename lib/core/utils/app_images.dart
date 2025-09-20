@@ -58,6 +58,14 @@ class Assets {
   /// assets/images/Photo_1.png
   static const String imagesPhoto1 = "assets/images/Photo_1.png";
 
+  /// Assets for imagesPhotoLec1
+  /// assets/images/Photo_lec_1.png
+  static const String imagesPhotoLec1 = "assets/images/Photo_lec_1.png";
+
+  /// Assets for imagesPhotoLec2
+  /// assets/images/Photo_lec_2.png
+  static const String imagesPhotoLec2 = "assets/images/Photo_lec_2.png";
+
   /// Assets for imagesPhotoList1
   /// assets/images/photo_list_1.png
   static const String imagesPhotoList1 = "assets/images/photo_list_1.png";

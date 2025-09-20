@@ -140,4 +140,10 @@ abstract class AppStyles {
     fontFamily: "Plus Jakarta Sans",
     fontWeight: FontWeight.w500,
   );
+  static const styleLight10 = TextStyle(
+    color: Colors.black,
+    fontSize: 10,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w300,
+  );
 }

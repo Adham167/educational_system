@@ -1,4 +1,3 @@
-import 'package:educational_system/core/utils/app_images.dart';
 import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
