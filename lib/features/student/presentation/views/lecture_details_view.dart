@@ -1,35 +1,35 @@
 import 'package:educational_system/core/utils/app_colors.dart';
 import 'package:educational_system/core/utils/app_images.dart';
 import 'package:educational_system/core/utils/app_router.dart';
+import 'package:educational_system/core/utils/widgets/custom_app_bar.dart';
 import 'package:educational_system/features/student/presentation/widgets/custom_bottom_bar.dart';
-import 'package:educational_system/features/student/presentation/widgets/student_body.dart';
+import 'package:educational_system/features/student/presentation/widgets/lecture_details_body.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class StudentView extends StatelessWidget {
-  const StudentView({super.key});
+class LectureDetailsView extends StatelessWidget {
+  const LectureDetailsView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: const StudentBody(),
-
+      appBar: CustomAppBar(height: 70),
+      body: LectureDetailsBody(),
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppColors.floatingbutton,
         onPressed: () {},
         shape: const CircleBorder(), // يخليه دايرة مظبوطة
-        child: Image.asset(Assets.imagesHome1),
+        child: Image.asset(Assets.imagesHeartSearch, color: Colors.white),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
 
       bottomNavigationBar: CustomBottomBar(
-        icon1: Assets.imagesHeartSearch,
+        icon1: Assets.imagesHome2,
         icon2: Assets.imagesUser,
-        name1: "Explore",
+        name1: "Home",
         name2: "Profile",
         ontap1: () => GoRouter.of(context).push(AppRouter.kExploreView),
-        ontap2: () => GoRouter.of(context).push(AppRouter.kProfileView),
       ),
     );
   }

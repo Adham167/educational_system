@@ -9,9 +9,12 @@ import 'package:educational_system/features/auth/presentation/views/reset_passwo
 import 'package:educational_system/features/auth/presentation/views/signin_view.dart';
 import 'package:educational_system/features/onboarding/presentation/views/onboarding_view.dart';
 import 'package:educational_system/features/splash/presentation/views/splash_view.dart';
+import 'package:educational_system/features/student/presentation/views/demonstrator_view.dart';
 import 'package:educational_system/features/student/presentation/views/explore_view.dart';
+import 'package:educational_system/features/student/presentation/views/lecture_details_view.dart';
 import 'package:educational_system/features/student/presentation/views/level_term_view.dart';
 import 'package:educational_system/features/student/presentation/views/level_view.dart';
+import 'package:educational_system/features/student/presentation/views/profile_view.dart';
 import 'package:educational_system/features/student/presentation/views/student_view.dart';
 import 'package:educational_system/features/student/presentation/views/subject_view.dart';
 import 'package:go_router/go_router.dart';
@@ -32,15 +35,45 @@ abstract class AppRouter {
   static const kLevelView = '/LevelView';
   static const kLevelTermView = '/LevelTermView';
   static const kSubjectView = '/SubjectView';
+  static const kLectureDetailsView = '/LectureDetailsView';
+  static const kProfileView = '/ProfileView';
+  static const kDemonstratorView = '/DemonstratorView';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => const SplashView()),
-      GoRoute(path: kStudentView, builder: (context, state) => const StudentView()),
-      GoRoute(path: kPasswordChangedView, builder: (context, state) => const PasswordChangedView()),
-      GoRoute(path: kExploreView, builder: (context, state) => const ExploreView()),
+      GoRoute(
+        path: kStudentView,
+        builder: (context, state) => const StudentView(),
+      ),
+      GoRoute(
+        path: kPasswordChangedView,
+        builder: (context, state) => const PasswordChangedView(),
+      ),
+      GoRoute(
+        path: kExploreView,
+        builder: (context, state) => const ExploreView(),
+      ),
       GoRoute(path: kLevelView, builder: (context, state) => const LevelView()),
-      GoRoute(path: kLevelTermView, builder: (context, state) => const LevelTermView()),
-      GoRoute(path: kSubjectView, builder: (context, state) => const SubjectView()),
+      GoRoute(
+        path: kProfileView,
+        builder: (context, state) => const ProfileView(),
+      ),
+      GoRoute(
+        path: kDemonstratorView,
+        builder: (context, state) => const DemonstratorView(),
+      ),
+      GoRoute(
+        path: kLevelTermView,
+        builder: (context, state) => const LevelTermView(),
+      ),
+      GoRoute(
+        path: kSubjectView,
+        builder: (context, state) => const SubjectView(),
+      ),
+      GoRoute(
+        path: kLectureDetailsView,
+        builder: (context, state) => const LectureDetailsView(),
+      ),
       GoRoute(
         path: KOnboardingView,
         builder: (context, state) => const OnboardingView(),

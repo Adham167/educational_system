@@ -2,7 +2,15 @@ import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomBar extends StatelessWidget {
-  const CustomBottomBar({super.key, required this.icon1, this.ontap1, this.ontap2, required this.name1, required this.name2, required this.icon2});
+  const CustomBottomBar({
+    super.key,
+    required this.icon1,
+    this.ontap1,
+    this.ontap2,
+    required this.name1,
+    required this.name2,
+    required this.icon2,
+  });
   final String icon1;
   final VoidCallback? ontap1;
   final VoidCallback? ontap2;
@@ -32,7 +40,7 @@ class CustomBottomBar extends StatelessWidget {
               ),
             ),
             GestureDetector(
-              onTap: () {},
+              onTap: ontap2,
               child: Column(
                 children: [
                   Image.asset(icon2),

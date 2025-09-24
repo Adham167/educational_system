@@ -1,7 +1,9 @@
 import 'package:educational_system/core/utils/app_colors.dart';
 import 'package:educational_system/core/utils/app_images.dart';
+import 'package:educational_system/core/utils/app_router.dart';
 import 'package:educational_system/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class SubjectBody extends StatelessWidget {
   const SubjectBody({super.key});
@@ -41,7 +43,12 @@ class LectureCardListView extends StatelessWidget {
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) {
-            return LectureCard(image: images[index]);
+            return GestureDetector(
+              onTap:
+                  () =>
+                      GoRouter.of(context).push(AppRouter.kLectureDetailsView),
+              child: LectureCard(image: images[index]),
+            );
           },
           separatorBuilder: (context, index) => SizedBox(width: 8),
           itemCount: 2,
