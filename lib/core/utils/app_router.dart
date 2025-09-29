@@ -14,6 +14,7 @@ import 'package:educational_system/features/student/presentation/views/explore_v
 import 'package:educational_system/features/student/presentation/views/lecture_details_view.dart';
 import 'package:educational_system/features/student/presentation/views/level_term_view.dart';
 import 'package:educational_system/features/student/presentation/views/level_view.dart';
+import 'package:educational_system/features/student/presentation/views/profile_edit_view.dart';
 import 'package:educational_system/features/student/presentation/views/profile_view.dart';
 import 'package:educational_system/features/student/presentation/views/student_view.dart';
 import 'package:educational_system/features/student/presentation/views/subject_view.dart';
@@ -38,9 +39,14 @@ abstract class AppRouter {
   static const kLectureDetailsView = '/LectureDetailsView';
   static const kProfileView = '/ProfileView';
   static const kDemonstratorView = '/DemonstratorView';
+  static const kProfileEditeView = '/ProfileEditeView';
   static final router = GoRouter(
     routes: [
       GoRoute(path: '/', builder: (context, state) => const SplashView()),
+      GoRoute(
+        path: kProfileEditeView,
+        builder: (context, state) => const ProfileEditView(),
+      ),
       GoRoute(
         path: kStudentView,
         builder: (context, state) => const StudentView(),

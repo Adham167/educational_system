@@ -16,6 +16,8 @@ class SplashView extends StatelessWidget {
         listener: (context, state) {
           if (state is UnAuthenticated) {
             GoRouter.of(context).push(AppRouter.KOnboardingView);
+          } else if (state is Authenticated) {
+            GoRouter.of(context).push(AppRouter.kStudentView);
           }
         },
         child: SplashViewBody(),

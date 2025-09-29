@@ -22,6 +22,10 @@ class Assets {
   /// assets/images/doctor_1-1.png
   static const String imagesDoctor11 = "assets/images/doctor_1-1.png";
 
+  /// Assets for imagesEdit
+  /// assets/images/Edit.png
+  static const String imagesEdit = "assets/images/Edit.png";
+
   /// Assets for imagesHeartSearch
   /// assets/images/heart-search.png
   static const String imagesHeartSearch = "assets/images/heart-search.png";
@@ -85,6 +89,10 @@ class Assets {
   /// Assets for imagesPhotoList4
   /// assets/images/photo_list_4.png
   static const String imagesPhotoList4 = "assets/images/photo_list_4.png";
+
+  /// Assets for imagesProfileImage1
+  /// assets/images/ProfileImage_1.png
+  static const String imagesProfileImage1 = "assets/images/ProfileImage_1.png";
 
   /// Assets for imagesStudent
   /// assets/images/student.png

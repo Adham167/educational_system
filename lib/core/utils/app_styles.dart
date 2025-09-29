@@ -169,6 +169,12 @@ abstract class AppStyles {
     fontFamily: "Plus Jakarta Sans",
     fontWeight: FontWeight.w700,
   );
+  static const styleBold24 = TextStyle(
+    color: Color(0xFFFFFFFF),
+    fontSize: 24,
+    fontFamily: "Plus Jakarta Sans",
+    fontWeight: FontWeight.w700,
+  );
 
   static const styleBold33 = TextStyle(
     color: Color(0xFF022D4F),
